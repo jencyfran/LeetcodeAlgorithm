@@ -1,0 +1,10 @@
+
+Source Code: (Python 3)
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        for idx, ele in enumerate(nums):
+            if ele == target:
+                return idx
+        else:
+            return -1
+                
