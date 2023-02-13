@@ -1,0 +1,8 @@
+Source code: (python 3)
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        for idx,v in enumerate(nums):
+            if v > target or v==target:
+                return idx
+        return idx+1
+        
