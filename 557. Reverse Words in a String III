@@ -8,3 +8,14 @@ class Solution:
             res.append(i[::-1])
             res.append(" ")
         return "".join(res).strip()
+
+
+Hint:
+
+1. Strip - removes spaces at the end and begining of the string 
+
+2. Split example:
+
+x = "welcome to the jungle"
+x.split()
+x =  ['welcome', 'to', 'the', 'jungle']
