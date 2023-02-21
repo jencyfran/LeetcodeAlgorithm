@@ -1,0 +1,26 @@
+Code: python 3
+
+class Solution:
+    def checkInclusion(self, s1: str, s2: str) -> bool:
+        if len(s1) > len(s2):
+            return False
+        
+        length = len(s1)
+        s1_counter = Counter(s1)
+        s2_counter = Counter()
+
+        for i, c in enumerate(s2):
+            s2_counter[c] += 1
+
+            if i >= length:
+                left = s2[i - length]
+
+                if s2_counter[left] == 1:
+                    del s2_counter[left]
+                else:
+                    s2_counter[left] -= 1
+
+            if s2_counter == s1_counter:
+                return True
+        
+        return False
