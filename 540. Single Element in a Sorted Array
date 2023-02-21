@@ -1,0 +1,8 @@
+Code: pyhton 3
+
+class Solution:
+    def singleNonDuplicate(self, nums: List[int]) -> int:
+        c_nums = Counter(nums)
+        for i in c_nums:
+            if c_nums[i] == 1:
+                return i
