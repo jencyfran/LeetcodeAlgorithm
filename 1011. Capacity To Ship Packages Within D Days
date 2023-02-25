@@ -14,7 +14,7 @@ class Solution:
             return ships <= days
 
 
-        while l < r:
+        while l <= r:
             mid = (l+r)//2
             if canShip(mid):
                 result = min(mid, result)
