@@ -22,3 +22,41 @@ class Solution:
             else:
                 l = mid + 1
         return result
+
+
+
+Description:
+
+Step 1:
+L = max(weights) # 10
+R = sum(weights #55
+
+Step 2:
+If L < R:
+mid = L + R // 2.   #(10+55)//2 = 32
+mid = 32 (Too big to ship)
+***day 1: 1,2,3,4,5,6,7
+day 2: 8,9,10*
+
+make mid as new R
+
+L = 10
+R = 32
+mid  = 42 // 2 = 21
+
+Day 1: 1,2,3,4,5,6
+Day 2: 7,8
+Day 3: 9,10
+
+Make mid as new R
+
+L = 10
+R = 21
+mid = 31 // 2
+mid = 15
+
+Day 1: 1, 2, 3, 4, 5
+Day 2: 6,7
+Day 3: 8
+Day 4: 9
+Day 5: 10
